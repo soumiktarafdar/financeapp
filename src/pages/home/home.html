@@ -1,38 +1,45 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-buttons start>
-      <button ion-button icon-only>
-        <ion-icon name="search"></ion-icon>
-      </button>
-    </ion-buttons>
-    <ion-title>fdsdfsdf</ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only>
-        <ion-icon name="person-add"></ion-icon>
-      </button>
-    </ion-buttons>
+
+    <ion-buttons left>
+        <button ion-button icon-only>
+          <ion-icon name="md-menu"></ion-icon>
+        </button>
+    </ion-buttons>    
+      
+    <ion-title>Login</ion-title>
+
+    <ion-buttons right>
+      <span>
+        <img class="padding-right" src="../assets/images/viet.png" alt="vietnam_flag">
+        <img src="../assets/images/uk.png" alt="uk_flag">
+      </span>
+    </ion-buttons>    
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="custom-back">
-    <div class="formdiv">
-      <h2>Do you know how <br>fabulous your life can be?</h2>
-      <img src="../assets/images/smallline.jpg" alt="line">
-    </div>
 
+  <div class="redline"></div>
+  <img class="loginicon" src="../assets/images/loginicon.png" alt="login">
+  <p class="logintitle">User Login</p>
+  <img class="blueline" src="../assets/images/blueline.jpg" alt="blueline">
+
+  <div class="container">
     <ion-list>
+      <ion-item class="nopaddingleft">
+        <ion-label stacked class="texttitle">Username</ion-label>
+        <ion-input type="text" placeholder="Username"></ion-input>
+      </ion-item>
 
-  <ion-item>
-    <ion-label stacked>Username</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
+      <ion-item class="nopaddingleft">
+        <ion-label stacked class="texttitle">Password</ion-label>
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+    </ion-list>
 
-  <ion-item>
-    <ion-label stacked>Password</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
-
-</ion-list>
+    <button ion-button block color="danger" class="paddingbtn">Login</button>
+    <div class="linktext"><span [navPush]="registerPage">Register</span> | <span>Forgot Password</span></div>
   </div>
+
 </ion-content>
