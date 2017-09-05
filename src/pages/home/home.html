@@ -1,11 +1,34 @@
+<ion-header>
+  <ion-toolbar color="primary">
 
-<ion-content class="customback">
+    <ion-buttons left>
+        <button ion-button icon-only menuToggle>
+          <ion-icon name="md-menu"></ion-icon>
+        </button>
+    </ion-buttons>    
+      
+    <ion-title><img src="assets/images/logo.jpg" alt="logo"></ion-title>
 
-  <div class="redline"></div>
+    <ion-buttons right>
+      <span>
+        <img class="padding-right" src="assets/images/viet.png" alt="vietnam_flag">
+        <img src="assets/images/uk.png" alt="uk_flag">
+      </span>
+    </ion-buttons>    
+  </ion-toolbar>
+</ion-header>
 
-  <img class="loginicon" src="assets/images/loginicon.png" alt="login">
-  <p class="logintitle">User Login</p>
-  <img class="blueline" src="assets/images/blueline.jpg" alt="blueline">
+<ion-content class="custom-back" style="padding-bottom: 0;">
+  
+    <div class="formdiv">
+      <h2>Do you know how <br>fabulous your life can be?</h2>
+      <img src="assets/images/smallline.png" alt="line">
+      <div class="social-set">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </div>
+    </div>
 
   <div class="container">
     <ion-list>
@@ -18,11 +41,23 @@
         <ion-label floating class="texttitle">Password</ion-label>
         <ion-input type="password"></ion-input>
       </ion-item>
+
+      <ion-item class="nopaddingleft nobackground">
+        <ion-label floating class="texttitle">Email</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item class="nopaddingleft nobackground">
+        <ion-label floating class="texttitle">Phone Number</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
     </ion-list>
 
-    <button ion-button block color="danger" class="paddingbtn">Login</button>
-    <div class="linktext"><span [navPush]="registerPage">Register</span> | <span>Forgot Password</span></div>
-    <div class="login_flag_container"><span><img class="flag_login" src="assets/images/viet.jpg" alt="vietnam"></span><span><img class="flag_login" src="assets/images/uk.jpg" alt="vietnam"></span></div>
+    <button ion-button block color="danger" class="marginbtn">INVEST NOW</button>
+    <div class="phone_text">
+     <span><ion-icon name="call"></ion-icon>Call Us : 123-5589965</span>
+    </div>
   </div>
 
+  
 </ion-content>

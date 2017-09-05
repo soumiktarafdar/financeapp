@@ -1,0 +1,28 @@
+
+<ion-content class="customback">
+
+  <div class="redline"></div>
+
+  <img class="loginicon" src="assets/images/loginicon.png" alt="login">
+  <p class="logintitle">User Login</p>
+  <img class="blueline" src="assets/images/blueline.jpg" alt="blueline">
+
+  <div class="container">
+    <ion-list>
+      <ion-item class="nopaddingleft nobackground">
+        <ion-label floating class="texttitle">Username</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item class="nopaddingleft nobackground">
+        <ion-label floating class="texttitle">Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <button ion-button block color="danger" class="paddingbtn">Login</button>
+    <div class="linktext"><span [navPush]="registerPage">Register</span> | <span>Forgot Password</span></div>
+    <div class="login_flag_container"><span><img class="flag_login" src="assets/images/viet.jpg" alt="vietnam"></span><span><img class="flag_login" src="assets/images/uk.jpg" alt="vietnam"></span></div>
+  </div>
+
+</ion-content>
