@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {HomePage} from '../home/home';
-
 
 /**
- * Generated class for the RegisterPage page.
+ * Generated class for the SettingsPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
@@ -12,18 +10,16 @@ import {HomePage} from '../home/home';
 
 @IonicPage()
 @Component({
-  selector: 'page-register',
-  templateUrl: 'register.html',
+  selector: 'page-settings',
+  templateUrl: 'settings.html',
 })
-export class RegisterPage {
-
-  homePage = HomePage;
+export class SettingsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad RegisterPage');
+    console.log('ionViewDidLoad SettingsPage');
   }
 
 }

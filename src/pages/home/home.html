@@ -1,22 +1,22 @@
-<ion-header>
+<!--<ion-header>
   <ion-toolbar color="primary">
 
-    <!-- <ion-buttons left>
+    <ion-buttons left>
         <button ion-button icon-only menuToggle>
           <ion-icon name="md-menu"></ion-icon>
         </button>
-    </ion-buttons> -->
+    </ion-buttons>
       
     <ion-title><img src="assets/images/logo.jpg" alt="logo"></ion-title>
 
-    <!-- <ion-buttons right>
+    <ion-buttons right>
       <span>
         <img class="padding-right" src="assets/images/viet.png" alt="vietnam_flag">
         <img src="assets/images/uk.png" alt="uk_flag">
       </span>
-    </ion-buttons> -->   
+    </ion-buttons>
   </ion-toolbar>
-</ion-header>
+</ion-header>-->
 
 <ion-content class="custom-back" style="padding-bottom: 0;">
   
@@ -41,23 +41,11 @@
         <ion-label floating class="texttitle">Password</ion-label>
         <ion-input type="password"></ion-input>
       </ion-item>
-
-      <ion-item class="nopaddingleft nobackground">
-        <ion-label floating class="texttitle">Email</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
-
-      <ion-item class="nopaddingleft nobackground">
-        <ion-label floating class="texttitle">Phone Number</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
     </ion-list>
 
-    <button ion-button block color="danger" class="marginbtn">INVEST NOW</button>
-    <div class="phone_text">
-     <span><ion-icon name="call"></ion-icon>Call Us : 123-5589965</span>
-    </div>
+    <button ion-button block color="danger" class="marginbtn" [navPush]="investmentPage">LOGIN</button>
+    <div class="linktext"><span [navPush]="registerPage">Register</span> | <span>Forgot Password</span></div>
   </div>
 
-  
+   
 </ion-content>

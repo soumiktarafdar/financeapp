@@ -22,7 +22,6 @@ page-home {
 .custom-back{
     background: url("../assets/images/homeback.jpg") no-repeat;
     background-size: cover; 
-    background-position: 0px 43px; 
     margin: auto; 
 }
     .container{width: 85%; margin: auto;}
@@ -38,4 +37,6 @@ page-home {
     .bar-button-default-md:hover:not(.disable-hover){color: #fff;}
     .phone_text{text-align: center; color: #fff; font-size: 15px;}
     .phone_text ion-icon{padding-right: 4px; padding-bottom: 5%;}
+    .linktext{font-family:'Roboto Medium'; color: #fff; font-size: 14px; text-align: center; padding-top: 10px; text-decoration: none; display: block; margin: auto;}
+    .texttitle{color: #fff;}
 }
