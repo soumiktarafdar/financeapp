@@ -10,6 +10,7 @@ import { RegisterPage } from '../pages/register/register';
 import { LoginPage } from '../pages/login/login';
 import { SettingsPage } from '../pages/settings/settings';
 import { InvestmentPage } from '../pages/investment/investment';
+import { ConfirmPage } from '../pages/confirm/confirm';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { InvestmentPage } from '../pages/investment/investment';
     RegisterPage,
     LoginPage,
     SettingsPage,
-    InvestmentPage
+    InvestmentPage,
+    ConfirmPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { InvestmentPage } from '../pages/investment/investment';
     RegisterPage,
     LoginPage,
     SettingsPage,
-    InvestmentPage
+    InvestmentPage,
+    ConfirmPage
   ],
   providers: [
     StatusBar,
