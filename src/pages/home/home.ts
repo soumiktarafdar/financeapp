@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {RegisterPage} from '../register/register';
 import {InvestmentPage} from '../investment/investment';
+import {ForgotPage} from '../forgot/forgot';
 
 @IonicPage()
 @Component({
@@ -9,8 +10,7 @@ import {InvestmentPage} from '../investment/investment';
   templateUrl: 'home.html',
 })
 export class HomePage {
-   registerPage = RegisterPage;
-    investmentPage = InvestmentPage;
+   //registerPage = RegisterPage;
    
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -19,7 +19,15 @@ export class HomePage {
     console.log('ionViewDidLoad HomePage');
   }
 
-  goToRegistration(){
+  goToInvestmentPage(){
+    this.navCtrl.push(InvestmentPage);
+  }
+
+  goToRegisterPage(){
     this.navCtrl.push(RegisterPage);
+  }
+
+  goToForgotPasswordPage(){
+    this.navCtrl.push(ForgotPage);
   }
 }

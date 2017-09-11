@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import {PreferencePage} from '../preference/preference';
+import {HistoryPage} from '../history/history';
+
 /**
  * Generated class for the InvestmentPage page.
  *
@@ -20,6 +23,14 @@ export class InvestmentPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InvestmentPage');
+  }
+
+  goToPreferencePage(){
+    this.navCtrl.push(PreferencePage);
+  }
+
+  goToHistoryPage(){
+    this.navCtrl.push(HistoryPage);
   }
 
 }

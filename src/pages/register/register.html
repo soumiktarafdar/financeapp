@@ -60,7 +60,7 @@
     </ion-list>    
 
     <button ion-button block color="danger" class="paddingbtn">Register Now</button>
-    <button ion-button block color="danger" [navPush]="homePage" class="paddingbtn">Cancel</button>
+    <button ion-button block color="danger" (click)="goToHomePage();" class="paddingbtn">Cancel</button>
   </div>
 
 </ion-content>
