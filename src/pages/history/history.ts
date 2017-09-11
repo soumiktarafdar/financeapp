@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import {HomePage} from '../home/home';
+
 /**
  * Generated class for the HistoryPage page.
  *
@@ -21,5 +23,10 @@ export class HistoryPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad HistoryPage');
   }
+
+  goToHomePage(){
+    this.navCtrl.popTo(HomePage);
+  }
+
 
 }
