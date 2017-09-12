@@ -4,6 +4,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+import { StarRatingModule } from 'angular-star-rating';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { RegisterPage } from '../pages/register/register';
@@ -14,6 +16,8 @@ import { ConfirmPage } from '../pages/confirm/confirm';
 import { HistoryPage } from '../pages/history/history';
 import { PreferencePage } from '../pages/preference/preference';
 import { ForgotPage } from '../pages/forgot/forgot';
+import { PrefresultPage } from '../pages/prefresult/prefresult';
+import { DetailsPage } from '../pages/details/details';
 
 
 @NgModule({
@@ -27,10 +31,13 @@ import { ForgotPage } from '../pages/forgot/forgot';
     ConfirmPage,
     HistoryPage,
     PreferencePage,
-    ForgotPage
+    ForgotPage,
+    PrefresultPage,
+    DetailsPage
   ],
   imports: [
     BrowserModule,
+    StarRatingModule.forRoot(),
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -44,7 +51,9 @@ import { ForgotPage } from '../pages/forgot/forgot';
     ConfirmPage,
     HistoryPage,
     PreferencePage,
-    ForgotPage
+    ForgotPage,
+    PrefresultPage,
+    DetailsPage
   ],
   providers: [
     StatusBar,

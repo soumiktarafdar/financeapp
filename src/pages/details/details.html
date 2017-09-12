@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar color="primary">
+
+    <ion-buttons left>
+        <button ion-button icon-only menuToggle>
+          <ion-icon name="md-menu"></ion-icon>
+        </button>
+    </ion-buttons>
+      
+    <ion-title>Investment Details</ion-title>
+
+    <!--<ion-buttons right>
+      <span>
+        <img class="padding-right" src="assets/images/viet.png" alt="vietnam_flag">
+        <img src="assets/images/uk.png" alt="uk_flag">
+      </span>
+    </ion-buttons>-->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img class="loginicon" src="assets/images/detailsicon.jpg" alt="investment">
+  <p class="logintitle">Investment Details</p>
+  <img class="blueline" src="assets/images/blueline.jpg" alt="blueline">
+
+  <div class="container">
+    <ion-card class="marginbtn">
+      <ion-card-content>
+        <img class="bank" src="assets/images/citi.jpg" alt="bank">
+        <img class="star" src="assets/images/star.jpg" alt="bank">
+        <ul>
+          <li>1.6% per anum 5 years</li>
+          <li>1.7% per anum 5 years</li>
+        </ul>
+          <button ion-button icon-left block class="custombtn"> <strong>INVEST NOW</strong></button>
+
+        <ion-item>
+          <ion-label>Amount</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-list>
+          <ion-item>
+            <ion-label>Interest Rate</ion-label>
+            <ion-select [(ngModel)]="rate">
+              <ion-option value="one">1.5%</ion-option>
+              <ion-option value="two">1.6%</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+        
+        <ion-list>
+          <ion-item>
+            <ion-label>Tenure</ion-label>
+            <ion-select [(ngModel)]="tenure">
+              <ion-option value="five">5 Years</ion-option>
+              <ion-option value="six">6 Years</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+
+        <ion-item>
+          <ion-label>Maturity Amount</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>        
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content> 
