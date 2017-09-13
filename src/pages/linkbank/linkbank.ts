@@ -18,6 +18,8 @@ import {ConfirmPage} from '../confirm/confirm';
 })
 export class LinkbankPage {
 
+  showHide: false;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
