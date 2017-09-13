@@ -2,8 +2,8 @@
   <ion-toolbar color="primary">
 
     <ion-buttons left>
-        <button ion-button icon-only menuToggle>
-          <ion-icon name="md-menu"></ion-icon>
+        <button ion-button icon-only (click)="goToPrefresultPage();">
+          <ion-icon name="ios-arrow-back-outline"></ion-icon>
         </button>
     </ion-buttons>
       
@@ -32,7 +32,6 @@
           <li>1.6% per anum 5 years</li>
           <li>1.7% per anum 5 years</li>
         </ul>
-          <button ion-button icon-left block class="custombtn"> <strong>INVEST NOW</strong></button>
 
         <ion-item>
           <ion-label>Amount</ion-label>
@@ -63,6 +62,8 @@
           <ion-label>Maturity Amount</ion-label>
           <ion-input type="text"></ion-input>
         </ion-item>        
+        
+        <button ion-button icon-left block class="custombtn" (click)="goToLinkbankPage();"><strong>MAKE REQUEST</strong></button>
 
       </ion-card-content>
     </ion-card>

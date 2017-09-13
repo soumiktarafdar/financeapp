@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import {PreferencePage} from '../preference/preference';
 import {DetailsPage} from '../details/details';
+import {ConfirmPage} from '../confirm/confirm';
+
 /**
- * Generated class for the PrefresultPage page.
+ * Generated class for the LinkbankPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
@@ -12,23 +13,23 @@ import {DetailsPage} from '../details/details';
 
 @IonicPage()
 @Component({
-  selector: 'page-prefresult',
-  templateUrl: 'prefresult.html',
+  selector: 'page-linkbank',
+  templateUrl: 'linkbank.html',
 })
-export class PrefresultPage {
+export class LinkbankPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PrefresultPage');
-  }
-
-  goToPreferencePage(){
-    this.navCtrl.popTo(PreferencePage);
+    console.log('ionViewDidLoad LinkbankPage');
   }
 
   goToDetailsPage(){
     this.navCtrl.push(DetailsPage);
+  }
+
+  goToConfirmPage(){
+    this.navCtrl.push(ConfirmPage);
   }
 }

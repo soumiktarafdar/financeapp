@@ -2,8 +2,8 @@
   <ion-toolbar color="primary">
 
     <ion-buttons left>
-        <button ion-button icon-only menuToggle>
-          <ion-icon name="md-menu"></ion-icon>
+        <button ion-button icon-only (click)="goToPreferencePage();">
+          <ion-icon name="ios-arrow-back-outline"></ion-icon>
         </button>
     </ion-buttons>
       
@@ -32,7 +32,7 @@
           <li>1.6% per anum 5 years</li>
           <li>1.7% per anum 5 years</li>
         </ul>
-          <button ion-button icon-left block class="marginbtn custombtn"> <strong>INVEST NOW</strong></button>
+          <button ion-button icon-left block class="marginbtn custombtn" (click)="goToDetailsPage();"> <strong>INVEST NOW</strong></button>
       </ion-card-content>
     </ion-card>
 
@@ -44,7 +44,7 @@
           <li>1.6% per anum 5 years</li>
           <li>1.7% per anum 5 years</li>
         </ul>
-          <button ion-button icon-left block class="marginbtn custombtn"> <strong>INVEST NOW</strong></button>
+          <button ion-button icon-left block class="marginbtn custombtn" (click)="goToDetailsPage();"> <strong>INVEST NOW</strong></button>
       </ion-card-content>
     </ion-card>
 
@@ -56,7 +56,7 @@
           <li>1.6% per anum 5 years</li>
           <li>1.7% per anum 5 years</li>
         </ul>
-          <button ion-button icon-left block class="marginbtn custombtn"> <strong>INVEST NOW</strong></button>
+          <button ion-button icon-left block class="marginbtn custombtn" (click)="goToDetailsPage();"> <strong>INVEST NOW</strong></button>
       </ion-card-content>
     </ion-card>
   </div>

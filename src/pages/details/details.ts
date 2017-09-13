@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import {PrefresultPage} from '../prefresult/prefresult';
+import {LinkbankPage} from '../linkbank/linkbank';
+
 /**
  * Generated class for the DetailsPage page.
  *
@@ -22,4 +25,11 @@ export class DetailsPage {
     console.log('ionViewDidLoad DetailsPage');
   }
 
+  goToPrefresultPage(){
+    this.navCtrl.push(PrefresultPage);
+  }
+
+  goToLinkbankPage(){
+    this.navCtrl.push(LinkbankPage);
+  }
 }
