@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar color="primary">
+
+    <ion-buttons left>
+        <button ion-button icon-only (click)="goToInvestmentPage();">
+          <ion-icon name="ios-arrow-back-outline"></ion-icon>
+        </button>
+    </ion-buttons>
+      
+    <ion-title>Reinvestment</ion-title>
+
+    <!--<ion-buttons right>
+      <span>
+        <img class="padding-right" src="assets/images/viet.png" alt="vietnam_flag">
+        <img src="assets/images/uk.png" alt="uk_flag">
+      </span>
+    </ion-buttons>-->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img class="loginicon" src="assets/images/reinvestment.png" alt="investment">
+  <p class="logintitle">Reinvestment Details</p>
+  <img class="blueline" src="assets/images/blueline.jpg" alt="blueline">
+
+  <div class="bluebar">Account Number - 1234567890</div>
+
+  <div class="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col padding col-6 class="custom-border">Bank</ion-col>
+        <ion-col padding col-6 class="custom-border1">Bank 1</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col padding col-6 class="custom-border">Amount</ion-col>
+        <ion-col padding col-6 class="custom-border1">10,000</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col padding col-6 class="custom-border">Tenure</ion-col>
+        <ion-col padding col-6 class="custom-border1">5 Years</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col padding col-6 class="custom-border">Interest Rate</ion-col>
+        <ion-col padding col-6 class="custom-border1">1.6%</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col padding col-6 class="custom-border">Maturity Amount</ion-col>
+        <ion-col padding col-6 class="custom-border1">To be calculated</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>    
+
+  <div class="bluebar">Reinvest With (Bank)</div>
+
+  <div class="container">
+  <ion-item>
+    <ion-label>Same Bank</ion-label>
+    <ion-radio name="bank" value="same"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Other Bank</ion-label>
+    <ion-radio name="bank" value="other"></ion-radio>
+  </ion-item>
+  </div>
+
+  <div class="bluebar">Reinvest With (Preference)</div>
+
+  <div class="container">
+  <ion-item>
+    <ion-label>Existing Preference</ion-label>
+    <ion-radio name="preference" value="same"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>New Preference</ion-label>
+    <ion-radio name="preference" value="other"></ion-radio>
+  </ion-item>
+
+  <button ion-button icon-left block color="danger" class="marginbtn"><strong>GO</strong></button>
+  </div>
+</ion-content> 
