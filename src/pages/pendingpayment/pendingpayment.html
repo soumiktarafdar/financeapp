@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="primary">
+
+    <ion-buttons left>
+        <button ion-button icon-only (click)="goToHistoryPage();">
+          <ion-icon name="ios-arrow-back-outline"></ion-icon>
+        </button>
+    </ion-buttons>
+      
+    <ion-title>Payment</ion-title>
+
+    <!--<ion-buttons right>
+      <span>
+        <img class="padding-right" src="assets/images/viet.png" alt="vietnam_flag">
+        <img src="assets/images/uk.png" alt="uk_flag">
+      </span>
+    </ion-buttons>-->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img class="loginicon" src="assets/images/pending.png" alt="investment">
+  <p class="logintitle">Pending Payment</p>
+  <img class="blueline" src="assets/images/blueline.jpg" alt="blueline">
+
+  <div class="bluebar">Account Number - 1234567890</div>
+
+  <div class="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col padding col-6 class="custom-border">Amount</ion-col>
+        <ion-col padding col-6 class="custom-border1">10,000</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col padding col-6 class="custom-border">Interest Rate</ion-col>
+        <ion-col padding col-6 class="custom-border1">1.6%</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col padding col-6 class="custom-border">Tenure</ion-col>
+        <ion-col padding col-6 class="custom-border1">5 Years</ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <button ion-button icon-left block color="danger" class="marginbtn"><strong>PENDING PAYMENT</strong>
+    </button>
+  </div>    
+
+</ion-content> 

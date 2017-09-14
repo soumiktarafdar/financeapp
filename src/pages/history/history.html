@@ -47,14 +47,14 @@
     </ion-row>
   </ion-grid>
 
-  <button ion-button icon-left block color="danger" class="marginbtn"> <strong>SHOW DETAILS</strong></button>
+  <button ion-button icon-left block color="danger" class="marginbtn" (click)="goToVerificationPage()"> <strong>SHOW DETAILS</strong></button>
   </div>
 
   <div class="container">
   <ion-grid>
     <ion-row>
       <ion-col padding col-6 class="custom-border">Acknowledge</ion-col>
-      <ion-col padding col-6 class="custom-border1">ACK1234</ion-col>
+      <ion-col padding col-6 class="custom-border1">ACK1235</ion-col>
     </ion-row>
     <ion-row>
       <ion-col padding col-6 class="custom-border">Amount</ion-col>
@@ -70,11 +70,38 @@
     </ion-row>
     <ion-row>
       <ion-col padding col-6 class="custom-border">Status</ion-col>
-      <ion-col padding col-6 class="custom-border1">Pending Verification</ion-col>
+      <ion-col padding col-6 class="custom-border1">Pending Payment</ion-col>
     </ion-row>
   </ion-grid>
 
-  <button ion-button icon-left block color="danger" class="marginbtn"> <strong>SHOW DETAILS</strong></button>
+  <button ion-button icon-left block color="danger" class="marginbtn" (click)="goToPendingPaymentPage()"> <strong>SHOW DETAILS</strong></button>
   </div>
+
+<div class="container">
+  <ion-grid>
+    <ion-row>
+      <ion-col padding col-6 class="custom-border">Acknowledge</ion-col>
+      <ion-col padding col-6 class="custom-border1">ACK1236</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col padding col-6 class="custom-border">Amount</ion-col>
+      <ion-col padding col-6 class="custom-border1">10,000</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col padding col-6 class="custom-border">Tenure</ion-col>
+      <ion-col padding col-6 class="custom-border1">5 Years</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col padding col-6 class="custom-border">Interest</ion-col>
+      <ion-col padding col-6 class="custom-border1">1.6%</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col padding col-6 class="custom-border">Status</ion-col>
+      <ion-col padding col-6 class="custom-border1">Active</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <button ion-button icon-left block color="danger" class="marginbtn" (click)="goToActivePage()"> <strong>SHOW DETAILS</strong></button>
+  </div>  
 
 </ion-content> 
