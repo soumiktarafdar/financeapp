@@ -15,5 +15,10 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-.topbar{width: 100%; background: #12498a; color: #fff;}
-.profile{width: 200px; height: 200px; border-radius: 50%; display: block; margin: 0 auto;}
+.back{background: #12498a;}
+.topbar{width: 100%; color: #fff; padding: 10%; border-bottom: 1px solid #2c6fbd;}
+.profile{width: 30%; height: 30%; border-radius: 50%; display: block; margin: 0 auto; border: 2px solid #2c6fbd;}
+.profiletitle{color: #5d9dea; font-size: 18px; text-align: center; padding-top: 5%;}
+.profilesubtitle{@extend .profiletitle; font-size: 14px; color: #fff; padding-top: 2%;}
+.custom-item{background: none; border: #2c6fbd; color: #fff;}
+.logo{display: block; margin: 0 auto; width: 50%; padding-bottom: 10%;}

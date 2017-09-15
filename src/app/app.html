@@ -1,9 +1,40 @@
 <ion-menu [content]="content">
 
-  <ion-content>
+  <ion-content class="back">
     <div class="topbar">
+      <img class="logo" src="assets/images/logo.jpg" alt="logo">
       <img class="profile" src="assets/images/profile.png" alt="profile">
+      <div class="profiletitle">Hoang Nguyen</div>
+      <div class="profilesubtitle">Dong Da, Hanoi</div>
     </div>
+
+    <ion-list>
+      <ion-item class="custom-item">
+        <ion-icon name="md-checkmark-circle-outline" item-start></ion-icon>
+          My Preference
+        <ion-icon name="md-arrow-dropright" item-end></ion-icon>
+      </ion-item>
+      <ion-item class="custom-item">
+        <ion-icon name="md-time" item-start></ion-icon>
+          Investment History
+        <ion-icon name="md-arrow-dropright" item-end></ion-icon>
+      </ion-item>
+      <ion-item class="custom-item">
+        <ion-icon name="md-card" item-start></ion-icon>
+          Reinvestment
+        <ion-icon name="md-arrow-dropright" item-end></ion-icon>
+      </ion-item>
+      <ion-item class="custom-item" (click)="goToSettingsPage()">
+        <ion-icon name="md-cog" item-start></ion-icon>
+          Settings
+        <ion-icon name="md-arrow-dropright" item-end></ion-icon>
+      </ion-item>
+      <ion-item class="custom-item">
+        <ion-icon name="md-lock" item-start></ion-icon>
+          Logout
+        <ion-icon name="md-arrow-dropright" item-end></ion-icon>
+      </ion-item>      
+    </ion-list>    
   </ion-content>
 
 </ion-menu>
