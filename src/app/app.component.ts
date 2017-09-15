@@ -3,9 +3,11 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
-import { SettingsPage } from '../pages/settings/settings';
+import { PreferencePage } from '../pages/preference/preference';
+import { HistoryPage } from '../pages/history/history';
 import { ReinvestmentPage } from '../pages/reinvestment/reinvestment';
+import { SettingsPage } from '../pages/settings/settings';
+import { HomePage } from '../pages/home/home';
 
 @Component({
   templateUrl: 'app.html'
@@ -16,15 +18,17 @@ export class MyApp {
 
   rootPage:any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<any>;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'Settings', component: SettingsPage },
-      { title: 'Reinvestment', component: ReinvestmentPage }
+      { title: 'My Preference', component: PreferencePage, icon: 'ios-home' },
+      { title: 'Investment History', component: HistoryPage, icon: 'ios-home' },
+      { title: 'Reinvestment', component: ReinvestmentPage, icon: 'ios-home' },
+      { title: 'Settings', component: SettingsPage, icon: 'ios-home' },
+      { title: 'Logout', component: HomePage, icon: 'ios-home' }
     ];
     
 
