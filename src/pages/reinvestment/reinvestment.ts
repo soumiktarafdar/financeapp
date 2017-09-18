@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import {InvestmentPage} from '../investment/investment';
+import {HistoryPage} from '../history/history';
 
 /**
  * Generated class for the ReinvestmentPage page.
@@ -26,6 +27,10 @@ export class ReinvestmentPage {
 
   goToInvestmentPage(){
     this.navCtrl.push(InvestmentPage);
+  }
+
+    goToHistoryPage(){
+    this.navCtrl.push(HistoryPage);
   }
 
 }
